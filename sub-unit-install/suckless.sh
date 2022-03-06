@@ -32,5 +32,8 @@ function install_suckless() {
     cp config/xinit/xinitrc ~/.xinitrc
     cp config/xmodmap/Xmodmap ~/.Xmodmap
 
+    mkdir -p ~/Pictures
+    cp -r config/wallpapers/. ~/Pictures/wallpapers
+
     export INSTALL_SUCKLESS=1
 }
