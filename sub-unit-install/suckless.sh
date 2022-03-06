@@ -22,6 +22,7 @@ function install_suckless() {
     sudo cp -r suckless-src/slock/. /opt/slock
     cd /opt/slock
     sudo make clean install
+    cd -
 
     sudo cp -r suckless-src/slstatus/. /opt/slstatus
     cd /opt/slstatus

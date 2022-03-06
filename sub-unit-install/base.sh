@@ -4,7 +4,7 @@ function install_base() {
     sudo pacman $PACMAN_FLAGS -S xorg xorg-xinit
     sudo pacman $PACMAN_FLAGS -S gtk3 webkit2gtk 
     sudo pacman $PACMAN_FLAGS -S alsa-utils alsa-plugins
-    sudo pacman $PACMAN_FLAGS -S gcc make automake autoconf bison flex pkg-config
+    sudo pacman $PACMAN_FLAGS -S gcc make automake autoconf bison flex pkg-config patch
     sudo pacman $PACMAN_FLAGS -S python python-pip rust
     sudo pacman $PACMAN_FLAGS -S wget curl aria2
 

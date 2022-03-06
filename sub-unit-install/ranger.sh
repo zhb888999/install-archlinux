@@ -8,7 +8,7 @@ function install_ranger() {
 
     pacman $PACMAN_FLAGS -S ranger ueberzug poppler
     mkdir -p ~/.config/ranger/plugins
-    git clone --depth 1 https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+    # git clone --depth 1 https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
     cp config/ranger/* ~/.config/ranger
 
     export INSTALL_RANGER=1
