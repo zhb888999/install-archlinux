@@ -6,7 +6,7 @@ function install_zsh() {
     source sub-unit-install/font.sh
     install_font
 
-    sudo pacman -S zsh
+    sudo pacman $PACMAN_FLAGS -S zsh
     bash -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     cp config/zsh/zshrc ~/.zshrc
 

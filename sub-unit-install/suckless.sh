@@ -6,7 +6,7 @@ function install_suckless() {
     source sub-unit-install/font.sh
     install_font
 
-    sudo pacman -S feh picom dmenu
+    sudo pacman $PACMAN_FLAGS -S feh picom dmenu
 
     sudo cp -r suckless-src/dwm/. /opt/dwm
     cd /opt/dwm

@@ -1,4 +1,5 @@
 #!/bin/bash
+PACMAN_FLAGS="--noconfirm --needed"
 
 source sub-unit-install/base.sh; install_base
 

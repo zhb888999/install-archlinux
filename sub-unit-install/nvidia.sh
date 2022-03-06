@@ -10,9 +10,9 @@ function install_nvidia() {
         echo "if GPU Not Work, please watch https://wiki.archlinux.org/title/NVIDIA"
         echo "############################################################################"
         if [ ${GPU_VERSION}0 -ge 10000 ]; then
-            sudo pacman -S nvidia-lts
+            sudo pacman $PACMAN_FLAGS -S nvidia-lts
         else
-            sudo pacman -S linux-headers
+            sudo pacman $PACMAN_FLAGS -S linux-headers
             wget -O ~/nvidia.run https://cn.download.nvidia.cn/XFree86/Linux-x86_64/470.103.01/NVIDIA-Linux-x86_64-470.103.01.run
             chmod +x ~/nvidia.run
             sudo ~/nvidia.run
