@@ -1,0 +1,6 @@
+.git
+*.diff
+*.orig
+*.rej
+*.o
+st
