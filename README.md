@@ -206,3 +206,20 @@ Password:  # 输入密码，密码不回显
 ```
 
 ## 启动自动安装
+
+安装git
+```shell
+sudo pacman -S git
+```
+
+clone自动安装项目
+
+```shell
+git clone https://github.com/zhb888999/install-archlinux.git
+```
+
+执行安装
+```shell
+cd install-archlinux
+bash install-archlinux
+```

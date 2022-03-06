@@ -29,7 +29,7 @@ function install_suckless() {
     cd -
 
     cp config/xinit/xinitrc ~/.xinitrc
-    cp config/xmodmap/.Xmodmap ~/.Xmodmap
+    cp config/xmodmap/Xmodmap ~/.Xmodmap
 
     export INSTALL_SUCKLESS=1
 }

@@ -9,5 +9,9 @@ function install_utils() {
     sudo pacman -S thunderbird
     sudo pacman -S code qtcreator
 
+    sudo pacman -S openssh
+    sudo systemctl enable sshd
+    sudo systemctl start sshd
+
     export INSTALL_UTILS=1
 }

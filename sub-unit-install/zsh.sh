@@ -8,7 +8,7 @@ function install_zsh() {
 
     sudo pacman -S zsh
     bash -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    cp config/zhsr/zshrc ~/.zshrc
+    cp config/zsh/zshrc ~/.zshrc
 
     export INSTALL_ZSH=1
 }
