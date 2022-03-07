@@ -8,9 +8,7 @@ function install_ranger() {
     sudo pacman $PACMAN_FLAGS -S ueberzug 
     sudo pacman $PACMAN_FLAGS -S poppler 
     sudo pacman $PACMAN_FLAGS -S ranger
-    mkdir -p ~/.config/ranger/plugins
-    # git clone --depth 1 https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
-    cp config/ranger/* ~/.config/ranger
+    cp -r config/ranger/. ~/.config/ranger
 
     export INSTALL_RANGER=1
 }
