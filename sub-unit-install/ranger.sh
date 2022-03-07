@@ -5,7 +5,9 @@ function install_ranger() {
 
     source sub-unit-install/fzf.sh
 
-    sudo pacman $PACMAN_FLAGS -S ranger ueberzug poppler
+    sudo pacman $PACMAN_FLAGS -S ueberzug 
+    sudo pacman $PACMAN_FLAGS -S poppler 
+    sudo pacman $PACMAN_FLAGS -S ranger
     mkdir -p ~/.config/ranger/plugins
     # git clone --depth 1 https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
     cp config/ranger/* ~/.config/ranger

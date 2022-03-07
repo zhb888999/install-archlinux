@@ -6,7 +6,7 @@ function install_pikaur() {
     sudo pacman $PACMAN_FLAGS -S fakeroot pyalpm python-commonmark asp python-pysocks
     git clone --depth 1 https://aur.archlinux.org/pikaur.git ~/pikaur
     cd ~/pikaur
-    makepkg -fsri
+    sudo makepkg -fsri
     cd -
     rm -rf ~/pikaur
 
