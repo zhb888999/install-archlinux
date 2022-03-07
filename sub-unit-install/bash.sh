@@ -7,3 +7,5 @@ function install_bash() {
 
     export INSTALL_BASH=1
 }
+
+install_bash

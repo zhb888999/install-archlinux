@@ -26,3 +26,5 @@ function install_nvidia() {
 
     export INSTALL_NVIDIA=1
 }
+
+install_nvidia

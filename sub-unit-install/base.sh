@@ -10,3 +10,5 @@ function install_base() {
 
     export INSTALL_BASE=1
 }
+
+install_base

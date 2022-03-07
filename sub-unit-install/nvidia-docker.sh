@@ -4,9 +4,6 @@ function install_nvidia_docker() {
     source sub-unit-install/docker.sh
     source sub-unit-install/pikaur.sh
     source sub-unit-install/nvidia.sh
-    install_docker
-    install_pikaur
-    install_nvidia
 
     pikaur -S nvidia-container-toolkit
     echo "####################################### nvidia-docker #############################################"
@@ -17,3 +14,5 @@ function install_nvidia_docker() {
 
     export INSTALL_NVIDIA_DOCKER=1
 }
+
+install_nvidia_docker

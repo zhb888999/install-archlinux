@@ -10,3 +10,5 @@ function install_font() {
 
     export INSTALL_FONT=1
 }
+
+install_font

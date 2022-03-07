@@ -21,3 +21,5 @@ function install_proxy() {
 
     export INSTALL_PROXY=1
 }
+
+install_proxy

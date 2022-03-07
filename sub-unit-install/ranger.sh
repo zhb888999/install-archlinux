@@ -4,7 +4,6 @@ function install_ranger() {
     [ -n "${INSTALL_RANGER+1}" ] && return
 
     source sub-unit-install/fzf.sh
-    install_fzf
 
     sudo pacman $PACMAN_FLAGS -S ranger ueberzug poppler
     mkdir -p ~/.config/ranger/plugins
@@ -13,3 +12,5 @@ function install_ranger() {
 
     export INSTALL_RANGER=1
 }
+
+install_ranger

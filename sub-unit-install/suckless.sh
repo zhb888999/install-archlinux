@@ -4,7 +4,6 @@ function install_suckless() {
     [ -n "${INSTALL_SUCKLESS+1}" ] && return
 
     source sub-unit-install/font.sh
-    install_font
 
     sudo pacman $PACMAN_FLAGS -S feh picom dmenu
 
@@ -37,3 +36,5 @@ function install_suckless() {
 
     export INSTALL_SUCKLESS=1
 }
+
+install_suckless

@@ -11,3 +11,5 @@ function install_nvim() {
 
     export INSTALL_NVIM=1
 }
+
+install_nvim

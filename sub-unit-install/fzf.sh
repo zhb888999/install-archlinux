@@ -10,3 +10,5 @@ function install_fzf() {
 
     export INSTALL_FZF=1
 }
+
+install_fzf

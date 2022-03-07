@@ -10,3 +10,5 @@ function install_fcitx5() {
 
     export INSTALL_FCITX5=1
 }
+
+install_fcitx5

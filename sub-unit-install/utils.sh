@@ -15,3 +15,5 @@ function install_utils() {
 
     export INSTALL_UTILS=1
 }
+
+install_utils
