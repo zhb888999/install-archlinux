@@ -8,7 +8,7 @@ function install_utils() {
     sudo pacman $PACMAN_FLAGS -S firefox chromium
     sudo pacman $PACMAN_FLAGS -S thunderbird
     sudo pacman $PACMAN_FLAGS -S code qtcreator
-
+    sudo pacman $PACMAN_FLAGS -S rust
     sudo pacman $PACMAN_FLAGS -S openssh
     sudo systemctl enable sshd
     sudo systemctl start sshd

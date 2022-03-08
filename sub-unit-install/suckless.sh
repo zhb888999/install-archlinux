@@ -28,7 +28,6 @@ function install_suckless() {
 
     network_interface_name=`cat /proc/net/dev | grep ":" | awk -F ":" 'NR==2{print $1}'`
     sudo sed -i "s/network_interface_name\[\] = \".*\";/network_interface_name\[\] = \"${network_interface_name}\";/g" config.h
-
     sudo make clean install
     cd -
 
