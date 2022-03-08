@@ -22,7 +22,7 @@ rm -rf config/fzf/.git
 
 cp ~/.config/nvim/init.vim config/nvim/init.vim
 
-cp ~/.config/ranger/. config/ranger
+cp -r ~/.config/ranger/. config/ranger
 rm -rf config/ranger/plugins/ranger_devicons/.git
 rm -rf config/ranger/plugins/ranger_devicons/.github
 

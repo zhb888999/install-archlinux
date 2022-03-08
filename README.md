@@ -87,13 +87,11 @@ mount /dev/sda1 /mnt/boot  # 将EFI分区挂在到/mnt/boot目录上
 
 ## 国内修改镜像源
 
-可以提高下载速度，以下以华为云源为例
-
 ```shell
 vim /etc/pacman.d/mirrorlist 
 # >>
 # 将以下源地址放在第一位
-# Server = https://mirrors.huaweicloud.com/archlinux/$repo/os/$arch
+# Server = http://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
 # >>
 ```
 
@@ -215,7 +213,7 @@ sudo pacman -S git
 clone自动安装项目
 
 ```shell
-git clone https://github.com/zhb888999/install-archlinux.git
+git clone https://github.com/zhb888999/install-archlinux.git  # use gitee https://gitee.com/zhb888999/install-archlinux.git
 ```
 
 执行安装
