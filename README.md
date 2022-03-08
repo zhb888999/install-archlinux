@@ -219,5 +219,5 @@ git clone https://github.com/zhb888999/install-archlinux.git  # use gitee https:
 执行安装
 ```shell
 cd install-archlinux
-bash install-archlinux
+bash install.sh
 ```
