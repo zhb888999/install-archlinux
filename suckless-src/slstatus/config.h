@@ -6,6 +6,9 @@ const unsigned int interval = 1000;
 /* text to show if no value can be retrieved */
 static const char unknown_str[] = "n/a";
 
+/* network interface name */
+static const char network_interface_name[] = "enp3s0";
+
 /* maximum output string length */
 #define MAXLEN 2048
 
@@ -66,8 +69,8 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 
-	{ netspeed_rx, "  %s",       "enp3s0" },
-	{ netspeed_tx, "%s|",         "enp3s0" },
+	{ netspeed_rx, "  %s",       network_interface_name },
+	{ netspeed_tx, "%s|",         network_interface_name },
 	{ disk_perc, " %s%%|",        "/" },
 	{ ram_perc,  "﬙ %s%%|",        NULL },
 	{ cpu_perc,  " %s%%|",        NULL },
