@@ -222,6 +222,13 @@ cd install-archlinux
 bash install.sh
 ```
 
+## 启动图形界面
+
+```shell
+startx
+```
+**每次登陆完成后在tty终端输入上述命令即可启动dwm，加载图形界面**
+
 ## install项目说明
 
 可以注释install.sh中的子模块来取消安装相应的模块，子模块在sub-init-install目录下，
@@ -234,3 +241,19 @@ bash sub-unit-install/INSTALL_NAME.sh
 # suckless说明
 
 详见SUCKLESS.md，包含相应的软件信息和快捷键说明
+
+# 常见问题
+
+## 显示乱码
+
+本项目自动安装FiraCode Nerd Font字体，如出现乱码可能为字体配置不正确，安装对应字体并正确配置即可，参见[Nerd Font 字体](https://github.com/ryanoasis/nerd-fonts)
+
+## github项目下载失败
+
+通常为网络原因，可配置代理或多次尝试独立安装相应的子模块，涉及github项目的子模块有zsh
+
+pikaur项目也可能因为网络原因安装失败
+
+## nvidia显卡驱动安装
+
+最新的nvidia显卡直接安装nvidia-utils即可，旧显卡建议直接下载官方驱动安装，但是当内核更新后，需要重新安装一次官方驱动，否则无法启动图形界面
