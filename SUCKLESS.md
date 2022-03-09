@@ -1,6 +1,6 @@
 # DWM
 
-dwm为6.3版本，添加了一些diff，在原有的快捷健基础上添加了slock锁屏、音量控制等快捷键
+dwm为6.3版本，添加了一些diff，在原有的快捷健基础上添加了slock锁屏、音量控制等快捷键，dwm图标需要NerdFont字体 
 ## diff
 
 * dwm-alpha-20201019-61bb8b2.diff
@@ -18,6 +18,9 @@ dwm为6.3版本，添加了一些diff，在原有的快捷健基础上添加了s
 * alt-ctl-1~9 对应workspace合并显示到当前workspace
 * alt-l 向右扩展主窗口
 * alt-h 向左缩小主窗口
+* alt-i 增加主窗口数量
+* alt-d 减小主窗口数量
+* alt-enter 切换当前窗口为主窗口
 * alt-j 聚焦到下一个窗口
 * alt-k 聚焦到上一个窗口
 * alt-. 聚焦到下一个屏幕(多屏幕)
@@ -26,6 +29,7 @@ dwm为6.3版本，添加了一些diff，在原有的快捷健基础上添加了s
 * alt-m 叠加显示模式
 * alt-f 浮动显示模式
 * alt-b 隐藏/显示 dwm bar
+* alt-shift-enter 打开终端
 * alt-shit-f 全屏显示当前窗口
 * alt-shit-c 关闭当前窗口
 * alt-shit-q 退出dwm，注销会话

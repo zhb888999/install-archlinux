@@ -221,3 +221,16 @@ git clone https://github.com/zhb888999/install-archlinux.git  # use gitee https:
 cd install-archlinux
 bash install.sh
 ```
+
+## install项目说明
+
+可以注释install.sh中的子模块来取消安装相应的模块，子模块在sub-init-install目录下，
+单独安装子模块只需要**在项目根目录下执行**脚本即可，示例如下：
+```shell
+bash sub-unit-install/INSTALL_NAME.sh
+```
+某些子模块依赖于其它子模块，依赖模块会自动安装
+
+# suckless说明
+
+详见SUCKLESS.md，包含相应的软件信息和快捷键说明
